@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios  dispositivos diferentes  ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/Pequeno.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/Médio.png" type="image/png">
+        <img src="Imagens/Grande.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--MP3 WAV OGG-->
+    <audio preload="auto" controls autoplay loop>
+        <source src="midia/Crystaline - Quincas Moreira (1).mp3" type="audio/mpeg">
+        <source src="midia/Crystaline - Quincas Moreira (1).mp3" type="audio/ogg">
+        <source src="midia/Crystaline - Quincas Moreira (1).mp3" type="audio/mav">
+        <p>infelizmente seu navegador não consegue reproduzir audio. <a href="https://youtu.be/K8cC6Z493Zs?si=gLIHT_izwPR8zNFw">Clique aqui para ouvir o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
