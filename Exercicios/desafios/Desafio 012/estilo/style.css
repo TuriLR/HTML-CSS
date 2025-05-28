@@ -22,7 +22,7 @@ html,body{
 }
 
 header{
-    font-size: 3.2vw;
+    font-size: 2.4vw;
     background-color: black;
     color: white;
     text-align: center;
@@ -44,28 +44,45 @@ header a, footer a{
     font-size: 1em;
 }
 section{
-    font-size: 3vw;
+    font-size: 1.5em;
     font-family: var(--fonte3);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
 }
+section>p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
 }
 section.imagem{
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 2px 6px 10px 0px rgba(0, 0, 0, 0.419);
     background-color: rgb(66, 62, 62);
     color: white;
 }
 section.imagem>p{
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.871);
     padding-left: 3vw;
-    width: 250px;
+    width: 400px;
     background-color: rgba(0, 0, 0, 0.427);
 }
 header a:hover, footer a:hover{
     text-decoration: underline;
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+
 }
 footer{
     background-color: black;
