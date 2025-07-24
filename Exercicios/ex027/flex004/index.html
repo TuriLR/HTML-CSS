@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <!--Direções
+    {
+        row:para direita;
+        row-reverse: da direita para esquerda;
+        column:Empilhado de cima para baixo;
+        column-reverse: Empilhado de baixo para cima;
+        }
+
+        Eixos-row
+    {
+        main-axis: da esquerda para direita;
+        cross-axis: de cima para baixo;
+        }
+        Eixos-row-reverse
+    {
+        main-axis:da direita para esquerda;
+        cross-axis: de baixo para cima;
+        }
+        Eixos-column
+    {
+        main-axis: De cima para baixo de forma vertical;
+        cross-axis: Da esquerda para direita;
+        }
+        Eixos-column-reverse
+    {
+        main-axis: De baixo para cima de forma vertical;
+        cross-axis: da direita para a esquerda;
+        }
+        Wrap
+    {
+        wrap:Quebra o bloco no sentido do cross-axis;
+        wrap-reverse: QUebra a linha no sentido contrario ao cross-axis;
+        }
+        space{
+        evenly: Espaços iguais;
+        around: Espaços divididos em blocos;
+        between: Não entendi muito bem, mas pode ser sobre os cantos dos blocos
+        }
+    --><style>
+        div.conteiner{
+            background-color: salmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row wrap-reverse;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
