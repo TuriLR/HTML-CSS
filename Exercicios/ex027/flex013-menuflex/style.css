@@ -22,21 +22,35 @@ header{
     background-color: rgb(117, 117, 117);
     color: white;
     padding: 10px;
-    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1{
     border: 1px dotted black;
     margin-left: 5px;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.33);
+    flex: 0 0 200px;
 }
 header > nav{
     border: 1px dotted black;
     margin: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 header > nav > a{
     text-decoration: none;
     background-color: black;
     color: whitesmoke;
     padding: 5px;
-    border-radius: 4px;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+header > nav > a:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.6s;
 }
