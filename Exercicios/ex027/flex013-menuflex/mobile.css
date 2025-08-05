@@ -3,9 +3,6 @@
 header, header > nav{
     flex-flow: column nowrap;
 }
-header > nav {
-
-}
 header > h1{
     flex-basis: 50px;
 }
